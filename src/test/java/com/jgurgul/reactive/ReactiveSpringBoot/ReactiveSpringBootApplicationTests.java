@@ -1,10 +1,10 @@
-package com.jgurgul.reactive.ReactoveSpringBoot;
+package com.jgurgul.reactive.ReactiveSpringBoot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ReactoveSpringBootApplicationTests {
+class ReactiveSpringBootApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,4 +1,4 @@
-package com.jgurgul.reactive.ReactoveSpringBoot.ws;
+package com.jgurgul.reactive.ReactiveSpringBoot.ws;
 
 import com.google.common.collect.Lists;
 import org.springframework.http.MediaType;
@@ -13,11 +13,6 @@ import java.time.Duration;
 @RestController
 @RequestMapping("/")
 public class TestController {
-
-//    @GetMapping("/test")
-//    public List<Integer> getTest() {
-//        return Lists.newArrayList(1,2,3,4,5);
-//    }
 
     @GetMapping("/testReactive")
     public Mono<Integer> getTestReactive() {

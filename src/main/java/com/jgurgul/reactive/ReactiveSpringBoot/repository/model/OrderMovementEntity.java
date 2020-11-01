@@ -14,7 +14,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 @Document
-public class OrderMovement implements Serializable {
+public class OrderMovementEntity implements Serializable {
     @Id
     private String _id;
     private int orderId;
@@ -24,8 +24,9 @@ public class OrderMovement implements Serializable {
     private int orderUnits;
     private int units;
 
-    public OrderMovement(int orderId, int articleId) {
+    public OrderMovementEntity(int orderId, int articleId) {
         this.orderId = orderId;
+        this.articleId = articleId;
         this.model = 1 + new Random().nextInt(100);
         this.color =  1 + new Random().nextInt(100);
         this.orderUnits =  1 + new Random().nextInt(100);
